@@ -1,3 +1,73 @@
-.body {
-    background: #171717;
+.col-6 {
+  background: #171717;
 }
+
+.col-3 {
+  background: black;
+  color: white;
+}
+
+
+/* !COL LEFT */
+
+.option {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.option svg {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+/* !COL-6 */
+
+.user {
+    height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.arrows {
+  display: flex;
+  color: white;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 25px;
+  height: 25px;
+}
+
+.arrows p {
+  font-size: 25px;
+}
+
+.icon-user {
+    color: white;
+    display: flex;
+    background: black;
+    border-radius: 50px;
+}
+
+.icon-user p {
+    margin-bottom: 0;
+}
+
+.img-user svg {
+    width: 25px;
+    height: 25px;
+}
+
+.featured-album {
+    width: 70%;
+    background: black;
+}
+
