@@ -1,8 +1,17 @@
-.col-6 {
+.col-7 {
   background: #171717;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .col-3 {
+  background: black;
+  color: white;
+}
+
+.col-2 {
   background: black;
   color: white;
 }
@@ -28,11 +37,13 @@
 /* !COL-6 */
 
 .user {
-    height: auto;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .arrows {
@@ -67,7 +78,32 @@
 }
 
 .featured-album {
-    width: 70%;
+    width: 90%;
+    height: 200px;
     background: black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.img-album img {
+  width: 90%;
+}
+
+.info-album {
+  width: 70%;
+  margin-top: 5px;
+}
+
+.annunci {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+
+.button-annunci button{
+  background: rgb(49, 49, 49);
+  border: none;
+  border-radius: 50px;
+  color: rgb(159, 157, 157);
+  font-size: 10px;
+}
