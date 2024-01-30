@@ -166,3 +166,27 @@
   width: 25px;
   height: 25px;
 }
+
+
+/* !CARD USER */
+
+.card-user {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.img-users svg {
+  width: 25px;
+  height: 25px;
+}
+
+.card-user p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.info-users svg {
+  width: 10px;
+  height: 10px;
+}
