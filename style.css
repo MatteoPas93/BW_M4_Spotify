@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .col-lg-3 {
@@ -16,8 +15,7 @@
   color: white;
 }
 
-
-/* !COL LEFT */
+/* !COL SX */
 
 .option {
   height: 300px;
@@ -26,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 20px;
+  color: #8f8f8f;
 }
 
 .option svg {
@@ -34,7 +33,7 @@
   margin-left: 10px;
 }
 
-/* !COL-6 */
+/* !COL-7 */
 
 .user {
   height: auto;
@@ -55,6 +54,12 @@
 .arrow-right {
   width: 25px;
   height: 25px;
+  background: #131313;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8f8f8f;
 }
 
 .arrows p {
@@ -62,27 +67,27 @@
 }
 
 .icon-user {
-    color: white;
-    display: flex;
-    background: black;
-    border-radius: 50px;
+  color: white;
+  display: flex;
+  background: black;
+  border-radius: 50px;
 }
 
 .icon-user p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .img-user svg {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .featured-album {
-    width: 90%;
-    height: auto;
-    background: black;
-    display: flex;
-    color: white;
+  width: 97%;
+  height: auto;
+  background: black;
+  display: flex;
+  color: white;
 }
 
 .img-album img {
@@ -100,8 +105,7 @@
   padding-inline: 10px;
 }
 
-
-.button-annunci button{
+.button-annunci button {
   background: rgb(49, 49, 49);
   border: none;
   border-radius: 50px;
@@ -144,4 +148,75 @@
 .menu svg {
   width: 25px;
   height: 25px;
+}
+
+/* !GENRES */
+
+.genres {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.genres h5 {
+  color: white;
+}
+
+.card-genres {
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+  background: #2c2c2c;
+}
+
+/* !COL-2 DX */
+
+.colonna-dx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-dx {
+  display: flex;
+  gap: 5px;
+  color: #8f8f8f;
+}
+
+.add-user-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.close svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* !CARD USER */
+
+.card-user {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  color: #8f8f8f;
+}
+
+.img-users svg {
+  width: 25px;
+  height: 25px;
+}
+
+.card-user p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.info-users svg {
+  width: 10px;
+  height: 10px;
 }
