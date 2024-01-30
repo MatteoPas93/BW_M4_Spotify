@@ -1,16 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
   color: white;
-  background-color: black;
+  background-color: black; 
 }
-
+.con{
+  background: linear-gradient(rgb(122, 122, 122),rgb(84, 84, 84),rgb(182, 105, 105));
+}
 .play {
   display: flex;
   gap: 20px;
 }
-
-.brani-popolari {
+.tasto{
+font-size: 4rem;
 }
+
 
 .container p {
   text-transform: uppercase;
@@ -20,3 +23,16 @@
   display: flex;
   justify-content: space-between;
 }
+.imgLogo{
+  width: 40px;
+  border-radius: 25px 40px 40px 25px;
+}
+.group{
+  width:50px;
+  /* height: 60px; */
+  border-radius: 80px;
+  }
+  .yellow-card{
+    margin-left: 20%;
+  }
+
