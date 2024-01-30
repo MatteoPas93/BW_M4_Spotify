@@ -35,13 +35,13 @@ const formatHTMLCard = (artist) => {
     artistBtn.classList.add("btn");
     artistBtn.style.color = "white";
     artistBtn.textContent = "Artist";
-    artistBtn.href = `./artista.html?id=${artist.id}`;
+    artistBtn.href = `./artista.html?id=${artist.artist.id}`;
     cardBody.appendChild(artistBtn);
 
     const albumBtn = document.createElement("a");
     albumBtn.classList.add("btn");
     albumBtn.style.color = "white";
-    albumBtn.textContent = "Artist";
+    albumBtn.textContent = "Album";
     albumBtn.href = `./artista.html?id=${artist.album.id}`;
     cardBody.appendChild(albumBtn);
 
