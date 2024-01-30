@@ -31,9 +31,19 @@ const formatHTMLCard = (artist) => {
     paragraph.style.color = "white";
     cardBody.appendChild(paragraph);
 
-    const button = document.createElement("a");
-    button.classList.add("btn");
-    cardBody.appendChild(button);
+    const artistBtn = document.createElement("a");
+    artistBtn.classList.add("btn");
+    artistBtn.style.color = "white";
+    artistBtn.textContent = "Artist";
+    artistBtn.href = `./artista.html?id=${artist.id}`;
+    cardBody.appendChild(artistBtn);
+
+    const albumBtn = document.createElement("a");
+    albumBtn.classList.add("btn");
+    albumBtn.style.color = "white";
+    albumBtn.textContent = "Artist";
+    albumBtn.href = `./artista.html?id=${artist.album.id}`;
+    cardBody.appendChild(albumBtn);
 
     return card;
 
