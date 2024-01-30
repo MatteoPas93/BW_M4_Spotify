@@ -35,7 +35,7 @@ const formatHTMLCard = (artist) => {
     artistBtn.classList.add("btn");
     artistBtn.style.color = "white";
     artistBtn.textContent = "Artist";
-    artistBtn.href = `./artista.html?id=${artist.artist.id}`;
+    artistBtn.href = `./artista.html?id=${artist.artist.id}&id1=${artist.album.id}`;
     cardBody.appendChild(artistBtn);
 
     const albumBtn = document.createElement("a");
