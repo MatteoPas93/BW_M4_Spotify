@@ -2,10 +2,23 @@
   background: #171717;
 }
 
-.ctrl-bar-img {
-  height: 100px;
+#control-bar {
+  background-color: #181818;
 }
 
-.ctrl-bar-icon {
-  height: 16px;
+.ctrl-bar-img {
+  height: 60px;
+}
+
+.ctrl-bar-icon,
+.ctrl-bar-icon-timeline {
+  height: 14px;
+}
+
+.play-button {
+  height: 24px;
+}
+
+#control-bar svg {
+  fill: white;
 }

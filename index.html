@@ -46,87 +46,90 @@
       <div class="col-3"></div>
     </div>
 
-    <section id="control-bar" class="position-absolute bottom-0">
-      <div class="container">
-        <div class="row d-flex justify-content-between">
-          <div class="col">
+    <section
+      id="control-bar"
+      class="position-absolute bottom-0 container-fluid p-3"
+    >
+      <div class="row d-flex justify-content-between w-100">
+        <div class="col d-flex justify-content-start align-items-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/6/6e/Pink_Floyd_-_Division_Bell.jpg"
+            alt=""
+            class="ctrl-bar-img"
+          />
+          <div class="ms-3">
+            <span class="title-bar-text d-block text-white"
+              >TITOLO CANZONE</span
+            >
+            <span class="artist-bar-text d-block text-white">nome artista</span>
+          </div>
+          <img
+            class="ctrl-bar-icon ms-4 text-white"
+            src="./assets/icons/Like.svg"
+            alt="Like_icon"
+          />
+        </div>
+        <div class="col p-0">
+          <div class="d-flex justify-content-center align-items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/6/6e/Pink_Floyd_-_Division_Bell.jpg"
-              alt=""
-              class="ctrl-bar-img"
+              class="ctrl-bar-icon-timeline text-white"
+              src="./assets/icons/Shuffle.svg"
+              alt="Shuffle_icon"
             />
-            <div>
-              <span>TITOLO CANZONE</span>
-              <span>nome artista</span>
-            </div>
             <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Like.svg"
-              alt="Like_icon"
+              class="ctrl-bar-icon-timeline ms-3"
+              src="./assets/icons/Previous.svg"
+              alt="Previous_icon"
+            />
+            <img
+              class="play-button mx-3"
+              src="./assets/icons/Pause.svg"
+              alt="Play-Pause_icon"
+            />
+            <img
+              class="ctrl-bar-icon-timeline me-3"
+              src="./assets/icons/Next.svg"
+              alt="Next_icon"
+            />
+            <img
+              class="ctrl-bar-icon-timeline"
+              src="./assets/icons/Repeat.svg"
+              alt="Repeat_icon"
             />
           </div>
-          <div class="col">
-            <div class="d-flex justify-content-center">
-              <img
-                class="ctrl-bar-icon"
-                src="./assets/icons/Shuffle.svg"
-                alt="Shuffle_icon"
-              />
-              <img
-                class="ctrl-bar-icon"
-                src="./assets/icons/Previous.svg"
-                alt="Previous_icon"
-              />
-              <img
-                class="ctrl-bar-icon"
-                src="./assets/icons/Pause.svg"
-                alt="Play-Pause_icon"
-              />
-              <img
-                class="ctrl-bar-icon"
-                src="./assets/icons/Next.svg"
-                alt="Next_icon"
-              />
-              <img
-                class="ctrl-bar-icon"
-                src="./assets/icons/Repeat.svg"
-                alt="Repeat_icon"
-              />
-            </div>
-            <div class="d-flex justify-content-between">
-              <span>0:00</span>
-              <input type="range" class="form-range" id="customRange1" />
-              <span>0:00</span>
-            </div>
+          <div class="d-flex justify-content-between mt-2">
+            <span>0:00</span>
+            <input type="range" class="form-range" id="timeline-range" />
+            <span>0:00</span>
           </div>
-          <div class="col d-flex justify-content-between">
-            <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Lyrics.svg"
-              alt="Lyrics_icon"
-            />
-            <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Queue.svg"
-              alt="Queue_icon"
-            />
-            <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Connect to a device.svg"
-              alt="Device_icon"
-            />
-            <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Volume.svg"
-              alt="Volume_icon"
-            />
-            <input type="range" class="form-range" id="customRange1" />
-            <img
-              class="ctrl-bar-icon"
-              src="./assets/icons/Full screen.svg"
-              alt="Fullscreen_icon"
-            />
-          </div>
+        </div>
+        <div class="col p-0 d-flex justify-content-between align-items-center">
+          <img
+            class="ctrl-bar-icon"
+            src="./assets/icons/Lyrics.svg"
+            alt="Lyrics_icon"
+          />
+          <img
+            class="ctrl-bar-icon ms-2"
+            src="./assets/icons/Queue.svg"
+            alt="Queue_icon"
+          />
+          <img
+            class="ctrl-bar-icon ms-2"
+            src="./assets/icons/Connect to a device.svg"
+            alt="Device_icon"
+          />
+          <img
+            class="ctrl-bar-icon ms-2"
+            src="./assets/icons/Volume.svg"
+            alt="Volume_icon"
+          />
+          <input type="range" class="form-range ms-2" id="volume-range" />
+          <img
+            class="ctrl-bar-icon ms-2"
+            src="./assets/icons/Full screen.svg"
+            alt="Fullscreen_icon"
+          />
         </div>
       </div>
     </section>
