@@ -1,6 +1,10 @@
-import { artistInfo } from "./markup-artista.js";
+import { artistInfo, albumInfo, formatHTMLList, tracksList } from "./markup-artista.js";
 
-console.log(artistInfo);
 
-const {picture, name, tracklist} = artistInfo;
-console.log(picture, name, tracklist);
+const displayArtistTracks = () => {
+albumInfo.map(album => {
+    tracksList.appendChild(formatHTMLList(album));
+});
+};
+
+displayArtistTracks();
