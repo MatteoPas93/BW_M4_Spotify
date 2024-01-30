@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 20px;
+  color: #8f8f8f;
 }
 
 .option svg {
@@ -53,6 +54,12 @@
 .arrow-right {
   width: 25px;
   height: 25px;
+  background: #131313;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8f8f8f;
 }
 
 .arrows p {
@@ -76,7 +83,7 @@
 }
 
 .featured-album {
-  width: 90%;
+  width: 97%;
   height: auto;
   background: black;
   display: flex;
@@ -143,6 +150,28 @@
   height: 25px;
 }
 
+/* !GENRES */
+
+.genres {
+  width: 100%;
+  height: 300px;
+  margin-top: 15px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.genres h5 {
+  color: white;
+}
+
+.card {
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+  background: #2c2c2c;
+}
+
 /* !COL-2 DX */
 
 .colonna-dx {
@@ -155,6 +184,7 @@
 .icon-dx {
   display: flex;
   gap: 5px;
+  color: #8f8f8f;
 }
 
 .add-user-icon svg {
@@ -167,13 +197,13 @@
   height: 25px;
 }
 
-
 /* !CARD USER */
 
 .card-user {
   display: flex;
   gap: 10px;
   margin-top: 40px;
+  color: #8f8f8f;
 }
 
 .img-users svg {
