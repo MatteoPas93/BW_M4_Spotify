@@ -7,18 +7,11 @@ const id = params.get("id");
 
 const id1 = params.get("id1");
 
-console.log(id1)
-
 const artistInfo = await fetchArtistByID();
 const albumInfo = await fetchAlbumByID();
 console.log(albumInfo);
 
-albumInfo.map(album => {
-    console.log(album.title, album.album.cover, album.duration.toString())
-})
-
 const {picture, name} = artistInfo;
-console.log(picture, name);
 
 const tracksList = document.getElementById("displayTracks");
 
