@@ -8,6 +8,7 @@ const artistInfo = await fetchArtistInfo();
 const formatHTMLCard = (artist) => {
     const card = document.createElement("div");
     card.classList.add("card", "col-lg-2", "bg-dark");
+    card.setAttribute("id", `${artist.id}`);
 
     const img = document.createElement("img");
     img.classList.add("card-img-top", "w-100", "h-100");
@@ -20,12 +21,14 @@ const formatHTMLCard = (artist) => {
 
     const title = document.createElement("h5");
     title.classList.add("card-title");
-    title.textContent = `${artist.album.title}`;
-    title.style.color = "white"
+    title.textContent = `${artist.title}`;
+    title.style.color = "white";
     cardBody.appendChild(title);
 
     const paragraph = document.createElement("p");
     paragraph.classList.add("card-text");
+    paragraph.textContent = `${artist.title_short}`;
+    paragraph.style.color = "white";
     cardBody.appendChild(paragraph);
 
     const button = document.createElement("a");
