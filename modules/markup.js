@@ -42,7 +42,7 @@ const formatHTMLCard = (artist) => {
     albumBtn.classList.add("btn");
     albumBtn.style.color = "white";
     albumBtn.textContent = "Album";
-    albumBtn.href = `./artista.html?id=${artist.album.id}`;
+    albumBtn.href = `./album.html?id=${artist.album.id}`;
     cardBody.appendChild(albumBtn);
 
     return card;

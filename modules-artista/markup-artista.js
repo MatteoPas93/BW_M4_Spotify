@@ -1,5 +1,5 @@
 import { fetchArtistByID, fetchAlbumByID } from "./api-artista.js";
-export { id, id1, artistInfo, albumInfo, formatHTMLList, tracksList };
+export { id, id1, artistInfo, albumInfo, artistName, artistPic, formatHTMLList, tracksList };
 
 const params = new URLSearchParams(window.location.search);
 
@@ -11,8 +11,9 @@ const artistInfo = await fetchArtistByID();
 const albumInfo = await fetchAlbumByID();
 console.log(albumInfo);
 
-const {picture, name} = artistInfo;
 
+const artistName = document.getElementById("artist-name");
+const artistPic = document.getElementById("artist-cover");
 const tracksList = document.getElementById("displayTracks");
 
 const formatHTMLList = (album) => {
