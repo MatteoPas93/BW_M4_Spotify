@@ -7,7 +7,8 @@ const artistInfo = await fetchArtistInfo();
 
 const formatHTMLCard = (artist) => {
     const card = document.createElement("div");
-    card.classList.add("card", "col-lg-2", "bg-dark", "p-0");
+    card.classList.add("card", "col-lg-2", "p-0");
+    card.style.color = "black";
     card.setAttribute("id", `${artist.id}`);
 
     const img = document.createElement("img");
@@ -19,31 +20,19 @@ const formatHTMLCard = (artist) => {
     cardBody.classList.add("card-body");
     card.appendChild(cardBody);
 
-    const title = document.createElement("h6");
-    title.classList.add("card-title");
+    const artistName = document.createElement("a");
+    artistName.classList.add("card-title", "d-block", "fw-5", "link-underline", "link-underline-opacity-0");
+    artistName.textContent = `${artist.artist.name}`;
+    artistName.href = `./artista.html?id=${artist.artist.id}&id1=${artist.album.id}`;
+    artistName.style.color = "white";
+    cardBody.appendChild(artistName);
+
+    const title = document.createElement("a");
+    title.classList.add("card-text", "d-block", "link-underline", "link-underline-opacity-0");
     title.textContent = `${artist.title}`;
+    title.href = `./album.html?id=${artist.album.id}`;
     title.style.color = "white";
     cardBody.appendChild(title);
-
-    const paragraph = document.createElement("p");
-    paragraph.classList.add("card-text");
-    paragraph.textContent = `${artist.title_short}`;
-    paragraph.style.color = "white";
-    cardBody.appendChild(paragraph);
-
-    const artistBtn = document.createElement("a");
-    artistBtn.classList.add("btn");
-    artistBtn.style.color = "white";
-    artistBtn.textContent = "Artist";
-    artistBtn.href = `./artista.html?id=${artist.artist.id}&id1=${artist.album.id}`;
-    cardBody.appendChild(artistBtn);
-
-    const albumBtn = document.createElement("a");
-    albumBtn.classList.add("btn");
-    albumBtn.style.color = "white";
-    albumBtn.textContent = "Album";
-    albumBtn.href = `./album.html?id=${artist.album.id}`;
-    cardBody.appendChild(albumBtn);
 
     return card;
 
