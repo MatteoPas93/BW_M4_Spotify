@@ -12,13 +12,53 @@
 
 .ctrl-bar-icon,
 .ctrl-bar-icon-timeline {
-  height: 14px;
+  height: 16px;
+}
+
+svg path {
+  fill: rgb(255, 255, 255);
 }
 
 .play-button {
-  height: 24px;
+  height: 28px;
 }
 
 #control-bar svg {
-  fill: white;
+  fill: rgb(255, 255, 255);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 400px;
+  height: 5px !important;
+  background: rgba(255, 255, 255);
+  border-radius: 2px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: pointer !important;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+#volume-range {
+  width: 100px;
 }
