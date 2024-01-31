@@ -35,4 +35,12 @@ font-size: 4rem;
   .yellow-card{
     margin-left: 20%;
   }
+  .user-info {
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .inCamera{
+    font-size: xx-small;
+  }
 
