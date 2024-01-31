@@ -17,10 +17,12 @@ const tracksList = document.getElementById("displayTracks");
 
 const formatHTMLList = (album) => {
     const card = document.createElement("li");
-    card.classList.add("d-flex");
+    card.classList.add("d-flex", "gap-2", "align-items-center", "my-2", "list-group-item", "text-white", "border-0");
+    card.style.background = "black";
 
     const img = document.createElement("img");
     img.src = `${album.album.cover}`;
+    img.style.width = "60px";
     card.appendChild(img);
 
     const title = document.createElement("p");
@@ -28,7 +30,7 @@ const formatHTMLList = (album) => {
     title.textContent = `${album.title}`;
     card.appendChild(title);
 
-    const duration = document.createElement("span");
+    const duration = document.createElement("p");
     duration.textContent = `${album.duration}`;
     duration.style.color = "white";
     card.appendChild(duration);
