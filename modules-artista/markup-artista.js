@@ -19,7 +19,7 @@ const tracksList = document.getElementById("displayTracks");
 const formatHTMLList = (album) => {
     const card = document.createElement("li");
     card.classList.add("d-flex", "gap-2", "align-items-center", "my-2", "list-group-item", "text-white", "border-0");
-    card.style.background = "black";
+    card.style.background = "inherit";
 
     const img = document.createElement("img");
     img.src = `${album.album.cover}`;

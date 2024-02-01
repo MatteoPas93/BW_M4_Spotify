@@ -1,8 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-* {
+body {
   color: white;
   background-color: black; 
 }
+
+.aside_{
+  background: black;
+  color: white;
+}
+
+.col-7 {
+background: #171717;
+color: white;
+}
+
 .con{
   background: linear-gradient(rgb(122, 122, 122),rgb(84, 84, 84),rgb(182, 105, 105));
 }
@@ -44,3 +55,56 @@ font-size: 4rem;
     font-size: xx-small;
   }
 
+  #control-bar {
+    background-color: #181818;
+    /* height: 80px; */
+  }
+  
+  .title-bar-text {
+    font-size: 10pt;
+  }
+  
+  .artist-bar-text {
+    font-size: 9pt;
+    color: rgb(180, 180, 180) !important;
+  }
+  
+  .bar-number-text {
+    font-size: 9pt;
+    color: rgb(180, 180, 180) !important;
+  }
+  
+  .ctrl-bar-img {
+    height: 60px;
+  }
+  
+  .ctrl-bar-icon,
+  .ctrl-bar-icon-timeline {
+    height: 14px;
+  }
+  
+  svg path {
+    fill: rgb(180, 180, 180);
+  }
+  
+  .play-button {
+    height: 28px;
+  }
+  
+  #control-bar svg {
+    fill: rgb(255, 255, 255);
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 400px;
+    height: 5px !important;
+    /* background: rgba(255, 255, 255); */
+  }
+  
+  #volume-range {
+    width: 100px;
+  }
+  
+  
