@@ -220,3 +220,56 @@
   width: 10px;
   height: 10px;
 }
+
+#control-bar {
+  background-color: #181818;
+  /* height: 80px; */
+}
+
+.title-bar-text {
+  font-size: 10pt;
+}
+
+.artist-bar-text {
+  font-size: 9pt;
+  color: rgb(180, 180, 180) !important;
+}
+
+.bar-number-text {
+  font-size: 9pt;
+  color: rgb(180, 180, 180) !important;
+}
+
+.ctrl-bar-img {
+  height: 60px;
+}
+
+.ctrl-bar-icon,
+.ctrl-bar-icon-timeline {
+  height: 14px;
+}
+
+svg path {
+  fill: rgb(180, 180, 180);
+}
+
+.play-button {
+  height: 28px;
+}
+
+#control-bar svg {
+  fill: rgb(255, 255, 255);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 400px;
+  height: 5px !important;
+  /* background: rgba(255, 255, 255); */
+}
+
+#volume-range {
+  width: 100px;
+}
+
