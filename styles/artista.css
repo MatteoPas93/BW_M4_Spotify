@@ -1,30 +1,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body {
   color: white;
-  background-color: black; 
+  background-color: black;
 }
 
-.aside_{
+.aside_ {
   background: black;
   color: white;
 }
 
 .col-7 {
-background: #171717;
-color: white;
+  background: #171717;
+  color: white;
 }
 
-.con{
-  background: linear-gradient(rgb(122, 122, 122),rgb(84, 84, 84),rgb(182, 105, 105));
+.con {
+  background: linear-gradient(
+    rgb(122, 122, 122),
+    rgb(84, 84, 84),
+    rgb(182, 105, 105)
+  );
 }
 .play {
   display: flex;
   gap: 20px;
 }
-.tasto{
-font-size: 4rem;
+.tasto {
+  font-size: 4rem;
 }
-
 
 .container p {
   text-transform: uppercase;
@@ -34,77 +37,75 @@ font-size: 4rem;
   display: flex;
   justify-content: space-between;
 }
-.imgLogo{
+.imgLogo {
   width: 40px;
   border-radius: 25px 40px 40px 25px;
 }
-.group{
-  width:50px;
+.group {
+  width: 50px;
   /* height: 60px; */
   border-radius: 80px;
-  }
-  .yellow-card{
-    margin-left: 20%;
-  }
-  .user-info {
-    justify-content: space-between; 
-    align-items: center; 
-  }
-  
-  .inCamera{
-    font-size: xx-small;
-  }
+}
+.yellow-card {
+  margin-left: 20%;
+}
+.user-info {
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #control-bar {
-    background-color: #181818;
-    /* height: 80px; */
-  }
-  
-  .title-bar-text {
-    font-size: 10pt;
-  }
-  
-  .artist-bar-text {
-    font-size: 9pt;
-    color: rgb(180, 180, 180) !important;
-  }
-  
-  .bar-number-text {
-    font-size: 9pt;
-    color: rgb(180, 180, 180) !important;
-  }
-  
-  .ctrl-bar-img {
-    height: 60px;
-  }
-  
-  .ctrl-bar-icon,
-  .ctrl-bar-icon-timeline {
-    height: 14px;
-  }
-  
-  svg path {
-    fill: rgb(180, 180, 180);
-  }
-  
-  .play-button {
-    height: 28px;
-  }
-  
-  #control-bar svg {
-    fill: rgb(255, 255, 255);
-  }
-  
-  input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 400px;
-    height: 5px !important;
-    /* background: rgba(255, 255, 255); */
-  }
-  
-  #volume-range {
-    width: 100px;
-  }
-  
-  
+.inCamera {
+  font-size: xx-small;
+}
+
+#control-bar {
+  background-color: #181818;
+  /* height: 80px; */
+}
+
+.title-bar-text {
+  font-size: 10pt;
+}
+
+.artist-bar-text {
+  font-size: 9pt;
+  color: rgb(180, 180, 180) !important;
+}
+
+.bar-number-text {
+  font-size: 9pt;
+  color: rgb(180, 180, 180) !important;
+}
+
+.ctrl-bar-img {
+  height: 60px;
+}
+
+.ctrl-bar-icon,
+.ctrl-bar-icon-timeline {
+  height: 14px;
+}
+
+svg path {
+  fill: rgb(180, 180, 180);
+}
+
+.play-button {
+  height: 28px;
+}
+
+#control-bar svg {
+  fill: rgb(255, 255, 255);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 400px;
+  height: 5px !important;
+  /* background: rgba(255, 255, 255); */
+}
+
+#volume-range {
+  width: 100px;
+}

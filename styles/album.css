@@ -20,13 +20,59 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 20px;
+}
+
+.music-list {
+  height: 50vh;
+}
+
+.music-list p {
+  margin: 0;
 }
 
 .aside {
   background-color: black;
   color: #c5c5c5;
+  background: black;
+  color: #8f8f8f;
+  padding-left: 30px;
 }
+
+/* Questo si applica a tutte le scrollbar nel documento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Traccia della scrollbar */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Maniglia della scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Maniglia della scrollbar al passaggio del mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+/* 
+.scroll-y::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.scroll-y::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll-y::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}  */
 
 .option svg {
   width: 25px;
@@ -119,6 +165,10 @@ div.fw-bold img {
   opacity: 0.8;
 }
 
+.contain_ {
+  height: 90vh;
+}
+
 .tracklist {
   border-block-end: 1px solid rgb(180, 180, 180);
   color: rgb(180, 180, 180);
@@ -194,5 +244,3 @@ input[type="range"] {
 #volume-range {
   width: 100px;
 }
-
-
