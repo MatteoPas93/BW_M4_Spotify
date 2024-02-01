@@ -1,4 +1,4 @@
-import { id, id1 } from "./markup-artista.js";
+import { id, id1_ } from "./markup-artista.js";
 export { fetchArtistByID, fetchAlbumByID };
 
 const fetchArtistByID = async () => {
@@ -14,9 +14,9 @@ const fetchArtistByID = async () => {
   };
 
 
-  const fetchAlbumByID = async () => {
+  const fetchAlbumByID = async (id1) => {
     try {
-      const res = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/" + id1);
+      const res = await fetch("https://striveschool-api.herokuapp.com/api/deezer/album/" + id1_);
       const data = await res.json();
       return data.tracks.data;
 
