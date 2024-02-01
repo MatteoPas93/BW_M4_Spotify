@@ -1,6 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background: rgb(0, 0, 0);
   background: linear-gradient(
       0deg,
@@ -139,9 +141,4 @@ div.fw-bold img {
 
 i.bi.bi-clock {
   font-size: small;
-}
-
-i.tasto.bi {
-  font-size: 50px;
-  color: #1ed760;
 }
