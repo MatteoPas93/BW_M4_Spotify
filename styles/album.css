@@ -10,7 +10,7 @@ body {
       rgba(204, 180, 68, 1) 100%
     )
     no-repeat;
-    font-size: 10pt;
+  font-size: 10pt;
 }
 
 /* !COL SX */
@@ -39,41 +39,25 @@ body {
   padding-left: 30px;
 }
 
-/* Questo si applica a tutte le scrollbar nel documento */
+.scroll-y {
+  overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Traccia della scrollbar */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Maniglia della scrollbar */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Maniglia della scrollbar al passaggio del mouse */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-.scroll-y {
-  overflow-y: scroll;
-}
-/* 
-.scroll-y::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.scroll-y::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.scroll-y::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}  */
 
 .option svg {
   width: 25px;
@@ -125,6 +109,8 @@ div.fw-bold img {
   padding-block: 4px;
   font-size: large;
 }
+
+
 
 .bi.bi-caret-right-fill {
   background-color: #1ed760;
