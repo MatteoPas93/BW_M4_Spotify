@@ -9,6 +9,6 @@ const fetchArtistInfo = async () => {
       return data.data;
     } catch (error) {
       console.error('Error:' + error);
-    //   alert(error);
+      alert(error);
     }
   };

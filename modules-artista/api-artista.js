@@ -9,7 +9,7 @@ const fetchArtistByID = async () => {
 
     } catch (error) {
       console.error('Error:' + error);
-    //   alert(error);
+      alert(error);
     }
   };
 
@@ -22,6 +22,6 @@ const fetchArtistByID = async () => {
 
     } catch (error) {
       console.error('Error:' + error);
-    //   alert(error);
+      alert(error);
     }
   };
