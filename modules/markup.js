@@ -8,7 +8,7 @@ const artistInfo = await fetchArtistInfo();
 const formatHTMLCard = (artist) => {
     const card = document.createElement("div");
     card.classList.add("card", "col-lg-2", "p-0");
-    card.style.color = "black";
+    card.style.background = "#171717";
     card.setAttribute("id", `${artist.id}`);
 
     const img = document.createElement("img");
