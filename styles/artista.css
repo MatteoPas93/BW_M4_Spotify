@@ -16,6 +16,11 @@ body {
   height: 90vh;
 }
 
+.following {
+  background: transparent;
+  color: white;
+}
+
 .con {
   background: linear-gradient(
     rgb(122, 122, 122),

@@ -83,6 +83,10 @@ div.fw-bold span {
   align-items: center;
 }
 
+#album-cover {
+  max-width: 250px;
+}
+
 div.fw-bold {
   background: black;
   border-radius: 50px;
