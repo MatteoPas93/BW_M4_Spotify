@@ -1,6 +1,6 @@
 export { fetchArtistInfo };
 
-const artist = "metallica"
+const artist = "beyonce";
 
 const fetchArtistInfo = async () => {
     try {
