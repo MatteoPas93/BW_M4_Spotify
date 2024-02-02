@@ -113,9 +113,11 @@ body {
   margin-bottom: 0;
 }
 
-.img-user svg {
+.img-user img {
   width: 25px;
   height: 25px;
+  border-radius: 50px;
+  margin-right: 3px;
 }
 
 .featured-album {
